@@ -111,3 +111,4 @@ RUN git clone https://github.com/inaki1111/ur5_isaaclab.git
 WORKDIR /workspace/ur5_isaaclab/source/ur5_isaaclab/
 #RUN python3 -m pip install --upgrade pip setuptools wheel \
     && python3 -m pip install -e .
+WORKDIR ${ISAACLAB_PATH}
