@@ -106,3 +106,8 @@ RUN echo "export ISAACLAB_PATH=${ISAACLAB_PATH}" >> ${HOME}/.bashrc && \
 # make working directory as the Isaac Lab directory
 # this is the default directory when the container is run
 WORKDIR ${ISAACLAB_PATH}
+WORKDIR /workspace/
+RUN git clone https://github.com/inaki1111/ur5_isaaclab.git
+WORKDIR /workspace/ur5_isaaclab/source/ur5_isaaclab/
+#RUN python3 -m pip install --upgrade pip setuptools wheel \
+    && python3 -m pip install -e .
