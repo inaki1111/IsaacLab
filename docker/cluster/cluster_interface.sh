@@ -77,7 +77,7 @@ submit_job() {
 
     case $CLUSTER_JOB_SCHEDULER in
         "SLURM")
-            job_script_file=submit_job_slurm.sh
+            job_script_file=submit_job_slurm_jean_zay.sh
             ;;
         "PBS")
             job_script_file=submit_job_pbs.sh
